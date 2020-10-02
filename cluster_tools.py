@@ -1,7 +1,8 @@
 from hdbscan import HDBSCAN
 
 
-def cluster(X, y):
+def cluster(vertexes, min_cluster_size=150, min_samples=1):
     return HDBSCAN(
-        min_cluster_size=None,
-        min_samples=None).fit_predict()
+        metric='manhattan',
+        min_cluster_size=min_cluster_size,
+        min_samples=min_samples).fit(vertexes)
