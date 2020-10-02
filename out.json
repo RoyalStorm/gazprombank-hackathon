@@ -1,0 +1,126 @@
+[
+  {
+    "id": "324394",
+    "geolocation": {
+      "latitude": "55.804936",
+      "longitude": "37.589922"
+    },
+    "address": {
+      "region": "Москва",
+      "regionType": "г",
+      "settlementType": "г",
+      "settlement": "Москва",
+      "fullAddress": "г. Москва, ул. Новодмитровская, д. 2, корп. 1",
+      "nearestSubway": " Дмитровская, 660 м",
+      "location": "Бизнес Парк \"Савеловский Сити\"",
+      "metro": [
+        {
+          "name": "Дмитровская",
+          "line": {
+            "name": "Серпуховско-Тимирязевская",
+            "code": "line9"
+          },
+          "distance": "660",
+          "icon": {
+            "colorScheme": {
+              "primary": "#A1A2A3",
+              "secondary": "#ACBFE0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "530829",
+    "geolocation": {
+      "latitude": "55.794386",
+      "longitude": "37.588108"
+    },
+    "address": {
+      "region": "Москва",
+      "regionType": "г",
+      "settlementType": "г",
+      "settlement": "Москва",
+      "fullAddress": "г. Москва, пл. площадь Савеловского вокзала, д. 2.",
+      "nearestSubway": "Савёловская, 53 м",
+      "location": "Савеловский вокзал",
+      "metro": [
+        {
+          "name": "Савеловская",
+          "line": {
+            "name": "Серпуховско-Тимирязевская",
+            "code": "line9"
+          },
+          "distance": "53",
+          "icon": {
+            "colorScheme": {
+              "primary": "#A1A2A3",
+              "secondary": "#ACBFE0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "529570",
+    "geolocation": {
+      "latitude": "55.792632",
+      "longitude": "37.597196"
+    },
+    "address": {
+      "region": "Москва",
+      "regionType": "г",
+      "settlementType": "г",
+      "settlement": "Москва",
+      "fullAddress": "г. Москва, ул. Сущевский вал, д. 15",
+      "nearestSubway": " Савёловская, 564 м\n Марьина Роща, 1,195 м\n Менделеевская, 1,216 м",
+      "location": "АЗС \"Газпромнефть\" № 109",
+      "metro": [
+        {
+          "name": "Савеловская",
+          "line": {
+            "name": "Серпуховско-Тимирязевская",
+            "code": "line9"
+          },
+          "distance": "564",
+          "icon": {
+            "colorScheme": {
+              "primary": "#A1A2A3",
+              "secondary": "#ACBFE0"
+            }
+          }
+        },
+        {
+          "name": "Марьина роща",
+          "line": {
+            "name": "Люблинско-Дмитровская",
+            "code": "line10"
+          },
+          "distance": "1195",
+          "icon": {
+            "colorScheme": {
+              "primary": "#B4D445",
+              "secondary": "#ACBFE0"
+            }
+          }
+        },
+        {
+          "name": "Менделеевская",
+          "line": {
+            "name": "Серпуховско-Тимирязевская",
+            "code": "line9"
+          },
+          "distance": "1216",
+          "icon": {
+            "colorScheme": {
+              "primary": "#A1A2A3",
+              "secondary": "#ACBFE0"
+            }
+          }
+        }
+      ]
+    }
+  }
+]
