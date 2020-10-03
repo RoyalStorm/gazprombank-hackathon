@@ -81,13 +81,8 @@ high_traffic_vertex_df = pd.DataFrame(
 )
 
 c = cluster(high_traffic_vertex_array)
-clusters_vertex_coords_dict = {
-    i: high_traffic_vertex_array[c.labels_ == i]
-    for i in np.unique(c.labels_)
-}
 
-plt.figure()
-
+# PLOT HIGH TRAFFIC VERTICES
 color_palette = sns.color_palette('Paired', 12)
 cluster_colors = [color_palette[x] if x >= 0
                   else (0.5, 0.5, 0.5)
@@ -96,7 +91,41 @@ cluster_member_colors = [sns.desaturate(x, p) for x, p in
                          zip(cluster_colors, c.probabilities_)]
 plt.scatter(*high_traffic_vertex_array.T, s=50, linewidth=0, c=cluster_member_colors, alpha=0.25)
 
+# PLOT ATM POINTS
+clusters_vertex_coords_dict = {
+    i: high_traffic_vertex_array[c.labels_ == i]
+    for i in np.unique(c.labels_)
+}
+atm_point_list = []
+for v in clusters_vertex_coords_dict.values():
+    minx, maxx, miny, maxy = (100, 0) * 2
+
+    for i in range(len(v)):
+        if (v[i, 0] < minx):
+            minx = v[i, 0]
+        if (v[i, 0] > maxx):
+            maxx = v[i, 0]
+        if (v[i, 1] < miny):
+            miny = v[i, 1]
+        if (v[i, 1] > maxy):
+            maxy = v[i, 1]
+    x0 = (maxx - minx) / 2
+    y0 = (maxy - miny) / 2
+
+    atm_point = [v[0, 0], v[0, 1]]
+
+    for i in range(len(v)):
+        if (abs(v[i, 0] - x0) < abs(atm_point[0] - x0)) and (abs(v[i, 1] - y0) < abs(atm_point[1] - y0)):
+            atm_point[0] = v[i, 0]
+            atm_point[1] = v[i, 1]
+
+    atm_point_list.append(atm_point)
+
+for i in atm_point_list:
+    plt.scatter(*i, marker="*", s=250, c='orange', alpha=0.9)
+
 plt.show()
+exit()
 
 plt.figure()
 
