@@ -1,5 +1,5 @@
 import json
-
+import math
 import matplotlib.pyplot as plt
 import pandas as pd
 from cluster_tools import cluster
@@ -45,24 +45,75 @@ plt.show()"""
 # plt.scatter(*merged.T, s=50, linewidth=0, c=cluster_member_colors, alpha=0.25)
 # plt.show()
 
-vertex_list = [*{*zip(df['lon1'], df['lat1']), *zip(df['lon2'], df['lat2'])}]  # df[['lon1','lat1']].values
-vertex_dict = {j: i for i, j in enumerate(vertex_list)}
-vertex_number = len(vertex_list)
+full_vertex_list = [*{*zip(df['lon1'], df['lat1']), *zip(df['lon2'], df['lat2'])}]  # df[['lon1','lat1']].values
+full_vertex_dict = {j: i for i, j in enumerate(full_vertex_list)}
+full_vertex_number = len(full_vertex_list)
 
-distance_matrix = [[None] * vertex_number for _ in range(vertex_number)]
+full_edge_matrix = [[None] * full_vertex_number for _ in range(full_vertex_number)]
 
-for [traffic, x1, y1, x2, y2] in df[['DailyPeoples', 'lon1', 'lat1', 'lon2', 'lat2']].values:
-    i, j = vertex_dict[(x1, y1)], vertex_dict[(x2, y2)]
-    distance_matrix[i][j] = distance_matrix[j][i] = {'traffic': traffic, 'distance': np.hypot([x2 - x1], [y2 - y1])}
+for \
+        [traffic, x1, y1, x2, y2] in \
+        df[['DailyPeoples', 'lon1', 'lat1', 'lon2', 'lat2']].values:
+    i, j = full_vertex_dict[(x1, y1)], full_vertex_dict[(x2, y2)]
+    full_edge_matrix[i][j] = full_edge_matrix[j][i] = {
+        'traffic': traffic,
+        'distance': math.hypot(x2 - x1, y2 - y1)
+    }
 
-clustering_data = np.array([[np.array([i['traffic'] for i in r if i]).mean()] for r in distance_matrix])
+full_vertex_traffic = np.array([
+    [np.array([i['traffic'] for i in r if i]).mean()] for r in full_edge_matrix
+])
 
-c = cluster(clustering_data)
+high_traffic_vertex_df_index = [
+    v for v, t in zip(range(full_vertex_number), full_vertex_traffic)
+    if t > (vt_mean := full_vertex_traffic.std() * 1.5)
+]
+high_traffic_vertex_array = np.array(full_vertex_list)[high_traffic_vertex_df_index]  # todo rename
+high_traffic_vertex_number = len(high_traffic_vertex_df_index)
+
+high_traffic_vertex_df = pd.DataFrame(
+    [
+        [full_edge_matrix[i][j] for j in high_traffic_vertex_df_index]
+        for i in high_traffic_vertex_df_index
+    ],
+    index=high_traffic_vertex_df_index,
+    columns=high_traffic_vertex_df_index
+)
+
+c = cluster(high_traffic_vertex_array)
+clusters_vertex_coords_dict = {
+    i: high_traffic_vertex_array[c.labels_ == i]
+    for i in np.unique(c.labels_)
+}
+
+plt.figure()
+
 color_palette = sns.color_palette('Paired', 12)
 cluster_colors = [color_palette[x] if x >= 0
                   else (0.5, 0.5, 0.5)
                   for x in c.labels_]
 cluster_member_colors = [sns.desaturate(x, p) for x, p in
                          zip(cluster_colors, c.probabilities_)]
-plt.scatter(*np.array(vertex_list).T, s=50, linewidth=0, c=cluster_member_colors, alpha=0.25)
+plt.scatter(*high_traffic_vertex_array.T, s=50, linewidth=0, c=cluster_member_colors, alpha=0.25)
+
+plt.show()
+
+plt.figure()
+
+plt.scatter(
+    *high_traffic_vertex_array.T,
+    #     s=50,
+    #     linewidth=0,
+    #     c=cluster_member_colors,
+    #     alpha=0.25
+)
+
+# for [v1, v2], value in np.ndenumerate(high_traffic_vertex_df.values):
+#     if value:
+#         plt.plot(  # todo цвет в зависимости от значения value['traffic']
+#             *np.array([
+#                 full_vertex_list[v1], full_vertex_list[v2],
+#             ]).T
+#         )  # x1 y1 \n x2 y2
+
 plt.show()
