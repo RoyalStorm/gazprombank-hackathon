@@ -67,11 +67,11 @@ clusters_vertex_coords_dict = {
     i: high_traffic_vertex_array[c.labels_ == i]
     for i in np.unique(c.labels_)[1:]
 }
-atm_point_2d_array = np.array([v.mean(axis=0) for v in clusters_vertex_coords_dict.values()])
+atm_lon_lat_2d_array = np.array([v.mean(axis=0) for v in clusters_vertex_coords_dict.values()])
 
-for address in get_atm_addresses_by_coords(np.flip(atm_point_2d_array, axis=1)):
+for address in get_atm_addresses_by_coords(np.flip(atm_lon_lat_2d_array, axis=1)):
     print(address)
 
-plt.scatter(*atm_point_2d_array.T, marker="*", s=250, c='white')
+plt.scatter(*atm_lon_lat_2d_array.T, marker="*", s=250, c='white')
 
 plt.show()
