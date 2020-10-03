@@ -11,7 +11,7 @@ from atm_geolocation import get_atm_addresses_by_coords
 
 with open("atm.json") as json_file:
     json_data = json.load(json_file)
-    df = pd.read_csv('./sav.csv', sep=';')
+    df = pd.read_csv('./savelovsky.csv', sep=';')
 
 full_vertex_list = [*{*zip(df['lon1'], df['lat1']), *zip(df['lon2'], df['lat2'])}]  # df[['lon1','lat1']].values
 full_vertex_dict = {j: i for i, j in enumerate(full_vertex_list)}
