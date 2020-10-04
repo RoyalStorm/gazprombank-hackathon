@@ -1,0 +1,539 @@
+[
+  {
+    "id": "524263",
+    "geolocation": {
+      "latitude": "55.888256",
+      "longitude": "37.589363"
+    },
+    "address": {
+      "region": "Москва",
+      "regionType": "г",
+      "settlementType": "г",
+      "settlement": "Москва",
+      "fullAddress": "г. Москва, Алтуфьевское шоссе д. 70, корп. 1.",
+      "nearestSubway": " Бибирево, 1, 000 м\n Алтуфьево, 1,100 м",
+      "location": "ТДЦ «Маркос-Молл»",
+      "metro": [
+        {
+          "name": "Бибирево",
+          "line": {
+            "name": "Серпуховско-Тимирязевская",
+            "code": "line9"
+          },
+          "distance": "1000",
+          "icon": {
+            "colorScheme": {
+              "primary": "#A1A2A3",
+              "secondary": "#ACBFE0"
+            }
+          }
+        },
+        {
+          "name": "Алтуфьево",
+          "line": {
+            "name": "Серпуховско-Тимирязевская",
+            "code": "line9"
+          },
+          "distance": "1100",
+          "icon": {
+            "colorScheme": {
+              "primary": "#A1A2A3",
+              "secondary": "#ACBFE0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "529402",
+    "geolocation": {
+      "latitude": "55.845501",
+      "longitude": "37.576142"
+    },
+    "address": {
+      "region": "Москва",
+      "regionType": "г",
+      "settlementType": "г",
+      "settlement": "Москва",
+      "fullAddress": "г. Москва, Гостиничный пр-д, д. 8, корп. 1",
+      "nearestSubway": " Владыкино, 926 м\n Петровско-Разумовская, 1000 м\n Отрадное, 2,683 м",
+      "location": "Гостиница \"Шерстон\" (1 этаж)",
+      "metro": [
+        {
+          "name": "Владыкино",
+          "line": {
+            "name": "Серпуховско-Тимирязевская",
+            "code": "line9"
+          },
+          "distance": "926",
+          "icon": {
+            "colorScheme": {
+              "primary": "#A1A2A3",
+              "secondary": "#ACBFE0"
+            }
+          }
+        },
+        {
+          "name": "Петровско-Разумовская",
+          "line": {
+            "name": "Серпуховско-Тимирязевская",
+            "code": "line9"
+          },
+          "distance": "1000",
+          "icon": {
+            "colorScheme": {
+              "primary": "#A1A2A3",
+              "secondary": "#ACBFE0"
+            }
+          }
+        },
+        {
+          "name": "Отрадное",
+          "line": {
+            "name": "Серпуховско-Тимирязевская",
+            "code": "line9"
+          },
+          "distance": "2683",
+          "icon": {
+            "colorScheme": {
+              "primary": "#A1A2A3",
+              "secondary": "#ACBFE0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "529403",
+    "geolocation": {
+      "latitude": "55.869219",
+      "longitude": "37.663043"
+    },
+    "address": {
+      "region": "Москва",
+      "regionType": "г",
+      "settlementType": "г",
+      "settlement": "Москва",
+      "fullAddress": "г. Москва, ул. Енисейская, д. 19",
+      "nearestSubway": " Бабушкинская, 179 м\n Свиблово, 1,569 м\n Медведково, 2,097 м",
+      "location": "ТЦ \"Радужный\" (1 этаж)",
+      "metro": [
+        {
+          "name": "Бабушкинская",
+          "line": {
+            "name": "Калужско-Рижская",
+            "code": "line6"
+          },
+          "distance": "179",
+          "icon": {
+            "colorScheme": {
+              "primary": "#F58232",
+              "secondary": "#ACBFE0"
+            }
+          }
+        },
+        {
+          "name": "Свиблово",
+          "line": {
+            "name": "Калужско-Рижская",
+            "code": "line6"
+          },
+          "distance": "1569",
+          "icon": {
+            "colorScheme": {
+              "primary": "#F58232",
+              "secondary": "#ACBFE0"
+            }
+          }
+        },
+        {
+          "name": "Медведково",
+          "line": {
+            "name": "Калужско-Рижская",
+            "code": "line6"
+          },
+          "distance": "2097",
+          "icon": {
+            "colorScheme": {
+              "primary": "#F58232",
+              "secondary": "#ACBFE0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "529403",
+    "geolocation": {
+      "latitude": "55.869219",
+      "longitude": "37.663043"
+    },
+    "address": {
+      "region": "Москва",
+      "regionType": "г",
+      "settlementType": "г",
+      "settlement": "Москва",
+      "fullAddress": "г. Москва, ул. Енисейская, д. 19",
+      "nearestSubway": " Бабушкинская, 179 м\n Свиблово, 1,569 м\n Медведково, 2,097 м",
+      "location": "ТЦ \"Радужный\" (1 этаж)",
+      "metro": [
+        {
+          "name": "Бабушкинская",
+          "line": {
+            "name": "Калужско-Рижская",
+            "code": "line6"
+          },
+          "distance": "179",
+          "icon": {
+            "colorScheme": {
+              "primary": "#F58232",
+              "secondary": "#ACBFE0"
+            }
+          }
+        },
+        {
+          "name": "Свиблово",
+          "line": {
+            "name": "Калужско-Рижская",
+            "code": "line6"
+          },
+          "distance": "1569",
+          "icon": {
+            "colorScheme": {
+              "primary": "#F58232",
+              "secondary": "#ACBFE0"
+            }
+          }
+        },
+        {
+          "name": "Медведково",
+          "line": {
+            "name": "Калужско-Рижская",
+            "code": "line6"
+          },
+          "distance": "2097",
+          "icon": {
+            "colorScheme": {
+              "primary": "#F58232",
+              "secondary": "#ACBFE0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "529409",
+    "geolocation": {
+      "latitude": "55.867171",
+      "longitude": "37.704140"
+    },
+    "address": {
+      "region": "Москва",
+      "regionType": "г",
+      "settlementType": "г",
+      "settlement": "Москва",
+      "fullAddress": "г. Москва, Ярославское ш., д. 69",
+      "nearestSubway": " Бабушкинская, 2,495 м\n Свиблово, 3,433 м\n Медведково, 3,499 м",
+      "location": "Универсам \"Для всей семьи\" (1 этаж), ООО \"Долина Детства\"",
+      "metro": [
+        {
+          "name": "Бабушкинская",
+          "line": {
+            "name": "Калужско-Рижская",
+            "code": "line6"
+          },
+          "distance": "2495",
+          "icon": {
+            "colorScheme": {
+              "primary": "#F58232",
+              "secondary": "#ACBFE0"
+            }
+          }
+        },
+        {
+          "name": "Свиблово",
+          "line": {
+            "name": "Калужско-Рижская",
+            "code": "line6"
+          },
+          "distance": "3433",
+          "icon": {
+            "colorScheme": {
+              "primary": "#F58232",
+              "secondary": "#ACBFE0"
+            }
+          }
+        },
+        {
+          "name": "Медведково",
+          "line": {
+            "name": "Калужско-Рижская",
+            "code": "line6"
+          },
+          "distance": "3499",
+          "icon": {
+            "colorScheme": {
+              "primary": "#F58232",
+              "secondary": "#ACBFE0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "529409",
+    "geolocation": {
+      "latitude": "55.867171",
+      "longitude": "37.704140"
+    },
+    "address": {
+      "region": "Москва",
+      "regionType": "г",
+      "settlementType": "г",
+      "settlement": "Москва",
+      "fullAddress": "г. Москва, Ярославское ш., д. 69",
+      "nearestSubway": " Бабушкинская, 2,495 м\n Свиблово, 3,433 м\n Медведково, 3,499 м",
+      "location": "Универсам \"Для всей семьи\" (1 этаж), ООО \"Долина Детства\"",
+      "metro": [
+        {
+          "name": "Бабушкинская",
+          "line": {
+            "name": "Калужско-Рижская",
+            "code": "line6"
+          },
+          "distance": "2495",
+          "icon": {
+            "colorScheme": {
+              "primary": "#F58232",
+              "secondary": "#ACBFE0"
+            }
+          }
+        },
+        {
+          "name": "Свиблово",
+          "line": {
+            "name": "Калужско-Рижская",
+            "code": "line6"
+          },
+          "distance": "3433",
+          "icon": {
+            "colorScheme": {
+              "primary": "#F58232",
+              "secondary": "#ACBFE0"
+            }
+          }
+        },
+        {
+          "name": "Медведково",
+          "line": {
+            "name": "Калужско-Рижская",
+            "code": "line6"
+          },
+          "distance": "3499",
+          "icon": {
+            "colorScheme": {
+              "primary": "#F58232",
+              "secondary": "#ACBFE0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "529431",
+    "geolocation": {
+      "latitude": "55.863106",
+      "longitude": "37.602049"
+    },
+    "address": {
+      "region": "Москва",
+      "regionType": "г",
+      "settlementType": "г",
+      "settlement": "Москва",
+      "fullAddress": "г. Москва, ул. Декабристов, д. 12",
+      "nearestSubway": " Отрадное, 170 м",
+      "location": "ТРЦ \"Золотой Вавилон Отрадное\" (1 этаж)",
+      "metro": [
+        {
+          "name": "Отрадное",
+          "line": {
+            "name": "Серпуховско-Тимирязевская",
+            "code": "line9"
+          },
+          "distance": "170",
+          "icon": {
+            "colorScheme": {
+              "primary": "#A1A2A3",
+              "secondary": "#ACBFE0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "529646",
+    "geolocation": {
+      "latitude": "55.863106",
+      "longitude": "37.602049"
+    },
+    "address": {
+      "region": "Москва",
+      "regionType": "г",
+      "settlementType": "г",
+      "settlement": "Москва",
+      "fullAddress": "г. Москва, ул. Декабристов, д. 12",
+      "nearestSubway": "Отрадное, 170 м",
+      "location": "ТРЦ \"Золотой Вавилон Отрадное\"",
+      "metro": [
+        {
+          "name": "Отрадное",
+          "line": {
+            "name": "Серпуховско-Тимирязевская",
+            "code": "line9"
+          },
+          "distance": "170",
+          "icon": {
+            "colorScheme": {
+              "primary": "#A1A2A3",
+              "secondary": "#ACBFE0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "529618",
+    "geolocation": {
+      "latitude": "55.869577",
+      "longitude": "37.666719"
+    },
+    "address": {
+      "region": "Москва",
+      "regionType": "г",
+      "settlementType": "г",
+      "settlement": "Москва",
+      "fullAddress": "г. Москва, ул. Менжинского, д. 32",
+      "nearestSubway": "Бабушкинская - 50 м",
+      "location": "ТРЦ Кондор",
+      "metro": [
+        {
+          "name": "Бабушкинская",
+          "line": {
+            "name": "Калужско-Рижская",
+            "code": "line6"
+          },
+          "distance": "50",
+          "icon": {
+            "colorScheme": {
+              "primary": "#F58232",
+              "secondary": "#ACBFE0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "531321",
+    "geolocation": {
+      "latitude": "55.859923",
+      "longitude": "37.687805"
+    },
+    "address": {
+      "region": "Москва",
+      "regionType": "г",
+      "settlementType": "г",
+      "settlement": "Москва",
+      "fullAddress": "г. Москва, Ярославское ш., д. 31",
+      "nearestSubway": " Бабушкинская, 1,823 м\n Свиблово, 2,213 м\n Медведково, 3,483 м",
+      "location": "Автосалон \"РОЛЬФ-СИТИ\"",
+      "metro": [
+        {
+          "name": "Бабушкинская",
+          "line": {
+            "name": "Калужско-Рижская",
+            "code": "line6"
+          },
+          "distance": "1823",
+          "icon": {
+            "colorScheme": {
+              "primary": "#F58232",
+              "secondary": "#ACBFE0"
+            }
+          }
+        },
+        {
+          "name": "Свиблово",
+          "line": {
+            "name": "Калужско-Рижская",
+            "code": "line6"
+          },
+          "distance": "2213",
+          "icon": {
+            "colorScheme": {
+              "primary": "#F58232",
+              "secondary": "#ACBFE0"
+       }}},
+    {
+      "name": "Медведково",
+     "line": {
+       "name": "Калужско-Рижская", "code": "line6"
+     },
+     "distance": "3483",
+     "icon": {
+       "colorScheme": {
+         "primary": "#F58232",
+       "secondary": "#ACBFE0"
+       }}}]}},
+ {
+   "id": "531321",
+  "geolocation": {
+    "latitude": "55.859923", "longitude": "37.687805"
+  },
+  "address": {
+    "region": "Москва",
+   "regionType": "г",
+   "settlementType": "г",
+   "settlement": "Москва",
+   "fullAddress": "г. Москва, Ярославское ш., д. 31",
+   "nearestSubway": " Бабушкинская, 1,823 м\n Свиблово, 2,213 м\n Медведково, 3,483 м",
+   "location": "Автосалон \"РОЛЬФ-СИТИ\"",
+   "metro": [{
+     "name": "Бабушкинская",
+     "line": {
+       "name": "Калужско-Рижская", "code": "line6"
+     },
+     "distance": "1823",
+     "icon": {
+       "colorScheme": {
+         "primary": "#F58232", "secondary": "#ACBFE0"
+       }}},
+    {
+      "name": "Свиблово",
+     "line": {
+       "name": "Калужско-Рижская", "code": "line6"
+     },
+     "distance": "2213",
+     "icon": {
+       "colorScheme": {
+         "primary": "#F58232", "secondary": "#ACBFE0"
+       }}},
+    {
+      "name": "Медведково",
+     "line": {
+       "name": "Калужско-Рижская", "code": "line6"
+     },
+     "distance": "3483",
+     "icon": {
+       "colorScheme": {
+         "primary": "#F58232",
+       "secondary": "#ACBFE0"
+       }}}]}}]
